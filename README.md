@@ -2,6 +2,8 @@
 
 English | [简体中文](README_CN.md)
 
+本地启动：docker-compose -f docker-compose.yml  up
+
 ### Infra
 
 <img width="1442" alt="image" src="https://user-images.githubusercontent.com/20157705/182568155-f0d06046-8bfc-49dd-b283-720db0e556bc.png">
