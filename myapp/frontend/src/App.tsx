@@ -31,7 +31,7 @@ interface IProps { }
 
 
 // React API 只有一套，现在有两套：类（class）API 和基于函数的钩子（hooks） API。
-
+// use*开头的都是钩子函数
 
 const AppWrapper = (props: IProps) => {
   const [currentRoute, setcurrentRoute] = useState('/')
