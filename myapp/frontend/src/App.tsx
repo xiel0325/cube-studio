@@ -29,6 +29,10 @@ const getAppList = (config: IRouterConfigPlusItem[]) => config.filter(item => !!
 
 interface IProps { }
 
+
+// React API 只有一套，现在有两套：类（class）API 和基于函数的钩子（hooks） API。
+
+
 const AppWrapper = (props: IProps) => {
   const [currentRoute, setcurrentRoute] = useState('/')
   const [openKeys, setOpenKeys] = useState<string[]>([])
@@ -376,4 +380,7 @@ const AppWrapper = (props: IProps) => {
   );
 };
 
+// export default作用：
+// 1。export与export default均可用于导出常量、函数、文件、模块
+// 2。可以在其它文件或模块中通过import+(常量 | 函数 | 文件 | 模块)名的方式，将其导入，以便能够对其进行使用
 export default AppWrapper;

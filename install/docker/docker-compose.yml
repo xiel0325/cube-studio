@@ -21,7 +21,7 @@ services:
 #      - ./data/mysql:/var/lib/mysql
 
   frontend:
-    image: ccr.ccs.tencentyun.com/cube-studio/kubeflow-dashboard-frontend:2022.12.01
+    image: ccr.ccs.tencentyun.com/cube-studio/kubeflow-dashboard-frontend:2022.12.01 # 这个的镜像和代码的关系？？？
     restart: unless-stopped
     ports:
       - '80:80'
@@ -41,7 +41,8 @@ services:
       REDIS_PASSWORD: admin
       MYSQL_SERVICE: 'mysql+pymysql://root:admin@host.docker.internal:3306/kubeflow?charset=utf8'
       ENVIRONMENT: DEV
-      GPU_TYPE: NVIDIA
+#      GPU_TYPE: NVIDIA
+
 #    ports:
 #      - "8080:80"
     depends_on:

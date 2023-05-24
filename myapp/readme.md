@@ -9,5 +9,10 @@
   2.启动：npm start
 
 2.后端：基于docker启动，使用fab的启动方式
-  1.
+  1....
+
+3.前后端一起启动：
+  cd install
+  docker-compose -f docker-compose.yml  up
+  即可在本地启动，进行开发调试！
 

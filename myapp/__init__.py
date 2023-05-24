@@ -191,8 +191,8 @@ class MyIndexView(IndexView):
     def index(self):
         if not g.user or not g.user.get_id():
             return redirect(appbuilder.get_url_for_login)
-        # return redirect("/myapp/home")
-        return redirect("/frontend/")
+        return redirect("/myapp/home")  # 两种方式都可以，为什么？前端地址：http://localhost/frontend/
+        # return redirect("/frontend/")
 
 
 custom_sm = conf.get("CUSTOM_SECURITY_MANAGER") or MyappSecurityManager
